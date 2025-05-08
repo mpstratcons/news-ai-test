@@ -1,24 +1,26 @@
-/* Reset minimal */
+/* === RESET MINIMAL === */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* === BODY === */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f9f9f9;
   color: #222;
   line-height: 1.6;
-  padding: 0 20px;
+  padding: 0;
 }
 
+/* === HEADER === */
 header {
   background: #cc0000;
   color: white;
-  padding: 20px 0;
+  padding: 25px 0;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 header h1 {
@@ -32,11 +34,43 @@ header p {
   color: #f2f2f2;
 }
 
+/* === NAVIGATION === */
+.topnav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.topnav a {
+  margin: 0 15px;
+  color: #cc0000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+/* === CONTAINER === */
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
+/* === ARTICLES LIST === */
 .article {
   background: white;
   padding: 25px 30px;
@@ -65,11 +99,11 @@ header p {
   color: #cc0000;
 }
 
-a:hover {
+.article a:hover {
   text-decoration: underline;
 }
 
-/* Single article style */
+/* === PAGE ARTICLE (si classe ajoutée) === */
 .article-page h1 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -91,12 +125,23 @@ a:hover {
   color: #000;
 }
 
-/* Responsive */
+/* === FOOTER === */
+footer {
+  background-color: #f0f0f0;
+  color: #444;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
+}
+
+/* === RESPONSIVE === */
 @media screen and (max-width: 600px) {
   header h1 {
     font-size: 2rem;
   }
-  
+
   .article {
     padding: 20px;
   }
@@ -111,5 +156,10 @@ a:hover {
 
   .article-page p {
     font-size: 1rem;
+  }
+
+  .topnav a {
+    margin: 5px 10px;
+    font-size: 0.9rem;
   }
 }
