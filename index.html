@@ -14,7 +14,7 @@
 </header>
 
 <nav class="topnav">
-  <div class="container">
+  <div class="nav-container">
     <a href="index.html">Accueil</a>
     <a href="#">Politique</a>
     <a href="#">Technologie</a>
@@ -23,7 +23,7 @@
   </div>
 </nav>
 
-<div class="container">
+<main class="container">
   <div class="article">
     <h2><a href="articles/article1.html">L’UE prépare une réforme énergétique sans précédent</a></h2>
     <p>Bruxelles s’apprête à dévoiler un nouveau cadre pour les énergies renouvelables...</p>
@@ -38,7 +38,7 @@
     <h2><a href="articles/article3.html">Climat : les régions italiennes face aux inondations</a></h2>
     <p>Entre urbanisme résilient et stratégies régionales, l’Italie adapte sa réponse...</p>
   </div>
-</div>
+</main>
 
 <footer>
   <div class="container">
@@ -49,42 +49,4 @@
 
 </body>
 </html>
-📄 Ajoute ce code dans ton style.css (en bas) pour le menu et le footer :
-css
-Copier
-Modifier
-/* Navigation */
-.topnav {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
-}
 
-.topnav .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.topnav a {
-  margin: 0 15px;
-  color: #cc0000;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  background-color: #f0f0f0;
-  color: #444;
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 60px;
-  border-top: 1px solid #ddd;
-}
