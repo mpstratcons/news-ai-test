@@ -2,51 +2,26 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Italia 24</title>
+  <title>Italia 24 – Accueil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f6f6f6;
-      color: #222;
-    }
-    header {
-      background: #cc0000;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    .article {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-left: 5px solid #cc0000;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .article h2 {
-      margin: 0 0 10px;
-    }
-    .article p {
-      margin: 0;
-    }
-    .article a {
-      text-decoration: none;
-      color: #cc0000;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <header>
   <h1>ITALIA 24</h1>
-  <p>L’actualité générée par l’IA, mise à jour en continu.</p>
+  <p>L’actualité générée par l’intelligence artificielle</p>
 </header>
+
+<nav class="topnav">
+  <div class="container">
+    <a href="index.html">Accueil</a>
+    <a href="#">Politique</a>
+    <a href="#">Technologie</a>
+    <a href="#">Europe</a>
+    <a href="#">Climat</a>
+  </div>
+</nav>
 
 <div class="container">
   <div class="article">
@@ -56,14 +31,60 @@
 
   <div class="article">
     <h2><a href="articles/article2.html">Apple prépare un iPhone IA natif en 2025</a></h2>
-    <p>Les rumeurs se confirment : le prochain iPhone pourrait embarquer une IA générative embarquée...</p>
+    <p>Les rumeurs se confirment : le prochain iPhone pourrait embarquer une IA générative locale...</p>
   </div>
 
   <div class="article">
-    <h2><a href="articles/article3.html">Climat : les régions italiennes face aux inondations à répétition</a></h2>
-    <p>Entre gestion locale et stratégie européenne, la péninsule adapte son modèle d’urbanisme...</p>
+    <h2><a href="articles/article3.html">Climat : les régions italiennes face aux inondations</a></h2>
+    <p>Entre urbanisme résilient et stratégies régionales, l’Italie adapte sa réponse...</p>
   </div>
 </div>
 
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Italia 24 — Tous droits réservés</p>
+    <p>Site généré automatiquement par intelligence artificielle</p>
+  </div>
+</footer>
+
 </body>
 </html>
+📄 Ajoute ce code dans ton style.css (en bas) pour le menu et le footer :
+css
+Copier
+Modifier
+/* Navigation */
+.topnav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.topnav .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.topnav a {
+  margin: 0 15px;
+  color: #cc0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  color: #444;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
+}
